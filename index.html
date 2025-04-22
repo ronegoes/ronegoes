@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio - Roneii Gomes</title>
+  <style>
+    /* Fundo magenta nas laterais */
+    body {
+      margin: 0;
+      background-color: magenta;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #C0C0C0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+
+    /* Container azul-claro que envolve todo o conteúdo principal */
+    .main-content {
+      background-color: #e6f7ff; /* azul bem clarinho */
+      min-height: calc(100vh - 130px); /* ajustar altura para caber header+footer */
+      padding: 40px 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    /* Card centralizado e destacado */
+    .card {
+      background-color: white;
+      width: 90%;
+      max-width: 970px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    /* Botão estilizado */
+    .btn {
+      display: inline-block;
+      margin: 15px 0;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #f0f0f0;
+      padding: 15px;
+    }
+
+    /* Carrossel ping‑pong */
+    .carousel-container {
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .carousel {
+      display: flex;
+      animation: pingpong 30s infinite alternate ease-in-out;
+    }
+
+    .carousel img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      object-position: center center;
+      flex-shrink: 0;
+    }
+	.btn {
+	  display: inline-block;
+	  padding: 10px 20px;
+	  background-color: #0a9396;
+	  color: #fff;
+	  border-radius: 6px;
+	  text-decoration: none;
+	}
+	.btn:hover {
+	  background-color: #00777c;
+	}
+
+
+    @keyframes pingpong {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-900%); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Roneii Gomes da Silva</h1>
+    <nav>
+	</a>
+	<a href="portifolio1.html">
+		<button type="button">Projetos</button>
+	</a>
+	<a href="portifolio3.html">
+		<button type="button">Sobre-mim</button>
+	</a>
+	
+	<a href="portifolio2.html">
+		<button type="button">Contato</button>
+	</a> 
+	<a href="certificados.html"><button>Certificados</button></a>
+    </nav>
+  </header>
+
+  <!-- ÁREA PRINCIPAL EM AZUL-CLARO -->
+  <div class="main-content">
+    <!-- Card centralizado -->
+    <div class="card" id="projetos">
+      <div class="carousel-container">
+        <div class="carousel">
+        <img src="img/eunapiscina.jpeg" alt="Foto 1">
+        <img src="img/eunapiscina1.jpeg" alt="Foto 2">
+        <img src="img/eunapiscina2.jpeg" alt="Foto 3">
+        <img src="img/eunapiscina3.jpeg" alt="Foto 4">
+        <img src="img/eunapiscina4.jpeg" alt="Foto 5">
+        <img src="img/eunapiscina5.jpeg" alt="Foto 6">
+        <img src="img/eunapiscina6.jpeg" alt="Foto 7">
+        <img src="img/eunapiscina7.jpeg" alt="Foto 8">
+        <img src="img/eunapiscina8.jpeg" alt="Foto 9">
+        <img src="img/eunapiscina9.jpeg" alt="Foto 10">
+		<img src="img/eunapiscina10.jpeg" alt="Foto 11">
+		<img src="img/eunapiscina11.jpeg" alt="Foto 12">
+		<img src="img/eunapiscina12.jpeg" alt="Foto 13">
+		<img src="img/eunapiscina13.jpeg" alt="Foto 14">
+		<img src="img/eunapiscina14.jpeg" alt="Foto 15">
+		<img src="img/eunapiscina15.jpeg" alt="Foto 16">
+		<img src="img/eunapiscina16.jpeg" alt="Foto 17">
+		<img src="img/eunapiscina17.jpeg" alt="Foto 18">
+		<img src="img/eunapiscina18.jpeg" alt="Foto 19">
+		<img src="img/eunapiscina19.jpeg" alt="Foto 20">
+		<img src="img/eunapiscina20.jpeg" alt="Foto 21">
+		<img src="img/eunapiscina21.jpeg" alt="Foto 22">
+		<img src="img/eunapiscina22.jpeg" alt="Foto 23">
+		<img src="img/eunapiscina23.jpeg" alt="Foto 24">
+		<img src="img/eunapiscina24.jpeg" alt="Foto 25">
+		<img src="img/eunapiscina25.jpeg" alt="Foto 26">
+		<img src="img/eunapiscina26.jpeg" alt="Foto 27">
+		<img src="img/eunapiscina27.jpeg" alt="Foto 28">
+		<img src="img/eunapiscina28.jpeg" alt="Foto 29">
+		<img src="img/eunapiscina29.jpeg" alt="Foto 30">
+		<img src="img/eunapiscina30.jpeg" alt="Foto 31">
+		<img src="img/eunapiscina31.jpeg" alt="Foto 32">
+          <!-- ... suas demais imagens ... -->
+        </div>
+      </div>
+
+      <h3>Esse sou eu</h3>
+      <p>As portas não se abrem com facilidade para mim, mas eu não sou de desistir com facilidade.</p>
+      <a href="#" class="btn">Conheça-me</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Roneii Gomes da Silva</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certificados – Roneii Gomes</title>
+  <style>
+    /* Laterais magenta */
+    body {
+      margin: 0;
+      background-color: magenta;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #C0C0C0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    nav a button {
+      padding: 8px 16px;
+      border: none;
+      background-color: #0a9396;
+      color: #fff;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    nav a button:hover {
+      background-color: #00777c;
+    }
+
+    /* Área central azul-claro */
+    .main-content {
+      background-color: #e6f7ff;
+      min-height: calc(100vh - 130px);
+      padding: 40px 20px;
+    }
+
+    /* Vitrine de vidro */
+    .showcase {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 16px;
+      max-width: 970px;
+      margin: 0 auto;
+      padding: 30px;
+    }
+
+    .showcase h2 {
+      text-align: center;
+      color: #005f73;
+      margin-bottom: 30px;
+    }
+
+    /* Grid de certificados */
+    .certificados-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    /* Cada cartão de certificado */
+    .cert-card {
+      background: rgba(255,255,255,0.4);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-decoration: none;
+      color: #000;
+      transition: transform 0.3s, box-shadow 0.3s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+    }
+    .cert-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    }
+
+    .cert-card img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 15px;
+    }
+
+    .cert-card h3 {
+      font-size: 1em;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .cert-card span {
+      font-size: 0.9em;
+      color: #333;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #f0f0f0;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Roneii Gomes da Silva</h1>
+    <h2>Desenvolvedor de Sistemas</h2>
+    <nav>
+      <a href="index.html"><button>Início</button></a>
+      <a href="portifolio3.html"><button>Sobre Mim</button></a>
+      <a href="portifolio2.html"><button>Contato</button></a>
+      <a href="certificados.html"><button>Certificados</button></a>
+    </nav>
+  </header>
+
+  <div class="main-content">
+    <div class="showcase" id="certificados">
+      <h2>Meus Certificados</h2>
+      <div class="certificados-grid">
+        <!-- Exemplo de cartão: substituir href e texto -->
+        <a href="certificados/javascriptUdmy_page-0001.jpg" class="cert-card" target="_blank">
+          <img src="certificados/javascriptUdmy_page-0001.jpg" alt="PDF">
+          <h3>Java script</h3>
+          <span>Udemy Cursos - Emitido em fev/2024</span>
+        </a>
+        <a href="certificados/jacacompudmy_page-0001.jpg" class="cert-card" target="_blank">
+          <img src="certificados/jacacompudmy_page-0001.jpg" alt="PDF">
+          <h3>Java Completo POO + Projetos Reais</h3>
+          <span>Udemy Cursos - Emitido em fev/2024</span>
+        </a>
+        <a href="certificados/ebraconj.jpg" class="cert-card" target="_blank">
+          <img src="certificados/ebraconj.jpg" alt="PDF">
+          <h3>Programação Java basico</h3>
+          <span>ESCON ESCOLA DE CURSOS ONLINE - Emitido em fev/2024</span>
+        </a>
+		<a href="certificados/cebrac.png" class="cert-card" target="_blank">
+          <img src="certificados/cebrac.png" alt="PDF">
+          <h3>Manutenção e conf de computadores</h3>
+          <span>ESCOLA CEBRAC GOIAS  - Emitido em dez/2010</span>
+        </a>
+		<a href="certificados/web.png" class="cert-card" target="_blank">
+          <img src="certificados/web.png" alt="PDF">
+          <h3>Programador web</h3>
+          <span>IFRS(O Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul) - Emitido em jun/2024</span>
+        </a>
+		<a href="certificados/certificado1.pdf" class="cert-card" target="_blank">
+          <img src="certificados/pptcoca.png" alt="PDF">
+          <h3>Power Point</h3>
+          <span>Universo Solar EAD - Emitido em jun/2024</span>
+        </a>
+		<a href="certificados/powerbi3.pdf" class="cert-card" target="_blank">
+          <img src="certificados/powb.png" alt="PDF">
+          <h3>Power BI</h3>
+          <span>Universo Solar EAD - Emitido em jun/2024</span>
+        </a>
+		<a href="certificados/certificadoExcel2.pdf" class="cert-card" target="_blank">
+          <img src="certificados/excel.png" alt="PDF">
+          <h3>Excel do Basico ao Avancado</h3>
+          <span>Universo Solar EAD - Emitido em jun/2024</span>
+        </a>
+        <!-- repita para cada certificado -->
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Roneii Gomes da Silva</p>
+  </footer>
+
+</body>
+</html>

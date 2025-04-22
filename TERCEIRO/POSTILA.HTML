@@ -1,0 +1,1268 @@
+<html> 
+ <head> 
+ <title> 
+ Curso de HTML 
+ </title> 
+ 
+ <body bgcolor="yellow" > 
+ <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Affordable and professional web design">
+	  <meta name="keywords" content="web design, affordable web design, professional web design">
+  	<meta name="author" content="Brad Traversy">
+    <title>Web Master | Roneii</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="img/favicon.png">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Roneii</span> Web Master</h1>
+        </div>
+        <nav>
+          <ul>
+		    <li class="current"><a href="INDEX.html.html">HOME</a></li>
+            <li class="current"><a href="about.html">Informação</a></li>
+            <li class="current"><a href="services.html">Servicos</a></li>
+			<li class="current"><a href="POSTILA.html">APOSTILA</a></li>
+			<li class="current"><a href="pag38.html">PAG38</a></li>
+			
+          </ul>
+        </nav>
+      </div>
+    </header>
+ Corpo da página HTML com cor de fundo. 
+ iNICIO DE CONTEUDOO DA APOSTILA DA PROFESSORA CARINE.
+ Iniciaremos a nossa primeira página editando o código no Bloco de Notas. 
+Siga os passos abaixo: 
+1. Crie uma pasta chamada OrgaoColegiado. 
+2. Clique em Arquivo/Novo/Documento de Texto 
+3. Nomeie o arquivo como index.html.
+4. Abra o arquivo, você irá notar que a página está em branco, pois ainda não 
+escrevemos nenhum código. 
+5. Clique com o botão direito do mouse sobre o arquivo e clique em Editar, ele 
+irá abrir o bloco de notas com seu conteúdo vazio. 
+6. Copie e cole o exemplo abaixo, salve o arquivo .txt e feche. 
+7. Depois abra novamente o arquivo HTML. 
+Exemplo com cor de fundo na página:
+Para demarcar títulos e subtítulos, use os TAGs de HEADER (H1 a H6), 
+juntamente com a opção CENTER. 
+Veja alguns exemplos: 
+Texto inserido entre <H1> e </H1>: 
+Texto inserido entre <H2> e </H2>: 
+Texto inserido entre <H3> e </H3>:
+ H3
+ Texto inserido entre <H3><CENTER> e </CENTER></H3> : 
+Observações: A TAG CENTER têm a função de deixar o cabeçalho ou texto 
+centralizado. 
+Exemplo: 
+Crie um novo arquivo chamado ExemploTitulo.html e insira o código abaixo. 
+<P>
+<FONT size="3" face="Tahoma" color="#FF00FF"> 
+ 
+Curso de HTML 
+ 
+<H1>Título com H1: Órgãos Colegiados</H1> 
+<H2>Título com H2: Órgãos Colegiados</H2> 
+<H3>Título com H3: Órgãos Colegiados</H3> 
+<H4>Título com H4: Órgãos Colegiados</H4> 
+<H5>Título com H5: Órgãos Colegiados</H5> 
+<H6><CENTER>Título com H6 centralizado: Órgãos 
+Colegiados</CENTER></H6>
+ 
+</FONT> 
+Estilos de texto 
+Além da TAG <CENTER>...</CENTER> existem as seguintes TAGs 
+que podem ser utilizadas para a formatação de um texto. 
+<B>...</B> 
+Aplica o estilo negrito. 
+<I>...</I> 
+Aplica o estilo itálico. 
+<U>...</U>
+Aplica o estilo sublinhado (nem todos os browser o reconhecem). 
+<SUP>...</SUP>
+Faz com que o texto fique sobrescrito
+. 
+<SUB>...</SUB>
+Faz com que o texto fique subscrito. 
+<PRE>...</PRE>
+Utiliza a pré-formatação, ou seja, deixa o texto da maneira em que foi 
+digitado.
+ <P>
+A TAG responsável pela quebra de parágrafos é a <P> que finaliza o 
+parágrafo e insere automaticamente uma linha em branco entre parágrafos. 
+ 
+ Sintaxe do comando: 
+ 
+ <P align=”posição”> Texto do parágrafo. 
+ 
+ Posição pode ser: 
+¾ Left: alinhamento à esquerda. 
+¾ Center: centralizado 
+¾ Right: alinhamento à direita 
+Exemplo: 
+Crie um novo arquivo com o nome EstiloTexto e insira o código abaixo: 
+Curso de HTML
+<B>Estilo negrito.</B> 
+<br> 
+<I>Estilo itálico.</I> 
+<br> 
+<U>estilo sublinhado (nem todos os browser o 
+reconhecem)</U> 
+<br> 
+<SUP>Texto sobrescrito.</SUP> 
+<br> 
+<SUB>Texto subscrito.</SUB> 
+<br> 
+<PRE>Este é um pequeno texto 
+ com estilo 
+ pré-formatado.</PRE> 
+<p align="center"> Este é um exemplo do primeiro 
+parágrafo centralizado. 
+<p> Este é um exemplo do segundo parágrafo.
+Fontes 
+Para inserir em sua página um texto com fontes de tamanhos, cores e tipos 
+diferentes utilizamos a TAG <FONT> ... </FONT>. 
+Sintaxe do comando: 
+<FONT size=”n” face=”nome” color=”cor”> 
+TEXTO 
+</FONT> 
+Onde: 
+¾ SIZE=“n” : n varia de 1 a 7 e 3 é o valor padrão da maioria dos 
+navegadores; 
+¾ FACE=”nome” : nome da fonte a ser utilizada (Arial, Tahoma, etc); 
+¾ COLOR=”cor” : cor da fonte definida em hexadecimal, ou através de 
+um nome pré-definido de cores. Veja no capítulo 9 desta apostila. 
+ 
+Exemplo: 
+Crie um arquivo chamado Fontes.html e insira o código abaixo: 
+<BR>
+<FONT size="1" face="Tahoma" color="red"> 
+ Texto com cor vermelha 
+</FONT> 
+<br><br> 
+<FONT size="2" face="Arial" color="green"> 
+ Texto com cor verde 
+</FONT> 
+<br><br> 
+<FONT size="3" face="Tahoma" color="blue"> 
+ Texto com cor azul 
+</FONT> 
+<br><br> 
+<FONT size="4" face="Tahoma" color="orange"> 
+ Texto com cor laranja 
+</FONT> 
+<br><br> 
+<FONT size="5" face="Tahoma" color="pink"> 
+ Texto com cor pink 
+</FONT> 
+<br><br> 
+<FONT size="6" face="Tahoma" color="#4F2F4F"> 
+ Texto com cor violeta 
+</FONT> 
+<br><br> 
+<FONT size="7" face="Tahoma" color="#FF00FF"> 
+ Texto com cor magenta 
+</FONT> 
+<br><br>
+
+<P>
+Quebras de linha 
+A tag <BR> faz a quebra de linha sem acrescentar espaços extras entre linhas. 
+Finaliza a linha de texto e insere automaticamente uma outra linha em branco. 
+Não precisa ser finaliza com </BR>. 
+1.4 Linhas Horizontais 
+Desenha uma linha horizontal no documento. 
+Não precisa ser finalizada com </HR>. 
+Sintaxe: 
+<HR width=”n%” align=”posição” size=”n” color=”#cor” 
+noshade> 
+Atributos: 
+¾ SIZE: Define a espessura, em pixels, da linha. 
+¾ WIDTH: Define a largura da linha, o que pode ser feito em pixels 
+(número absoluto) ou em percentual da tela (com o símbolo de %) 
+¾ ALIGN: Alinhamento, como o que tem sido usado, pode ser LEFT,
+RIGHT e CENTER, ou seja, esquerda, direita e ao centro, 
+respectivamente.
+¾ NOSHADE: Linha sem sombra. O padrão é a linha sombreada, 
+utilizando esse atributo temos uma linha sem sombra. 
+Exemplo: 
+Crie um arquivo chamado LinhaHorizontal.html e insira o código abaixo: 
+<html> 
+<body> 
+ 
+Primeiro exemplo com a linha horizontal 
+<HR width="100%" align="left" size="2" color="silver" > 
+<br> 
+<center>Segundo exemplo com a linha horizontal</center> 
+<HR width="70%" align="center" size="3" color="blue" > 
+<br> 
+Terceiro exemplo com a linha horizontal 
+<HR width="30%" align="center" size="5" color="red" noshade> 
+<br>
+
+3. Imagens 
+Para inserir uma imagem em uma página web utilizamos o comando, tag, 
+<img src> e seus atributos. Os formatos mais usados são o GIF e o JPG, ambos 
+com compactação de pixels. 
+Sintaxe: 
+<IMG SRC="endereço da imagem” WIDTH=”n%” HEIGHT=”n%” 
+ALIGN=”posição” ALT=”texto”> 
+Atributos: 
+¾ WIDTH: Define a largura da imagem, o que pode ser feito em pixels 
+(número absoluto) ou em percentual da tela (com o símbolo de %). 
+¾ HEIGHT: Define a altura da linha, o que pode ser feito em pixels 
+(número absoluto) ou em percentual da tela (com o símbolo de %). 
+¾ ALIGN: Alinhamento da imagem pode ser, LEFT, RIGHT e CENTER, 
+ou seja, esquerda, direita e ao centro, respectivamente. 
+¾ ALT: texto que irá aparecer ao passar o mouse sobre a imagem ou 
+texto que surgirá caso a imagem não possa ser visualizada. 
+¾ BORDER: Especificação da largura da borda da imagem. Valor em 
+pixel. 
+¾ VSPACE: Para especificar o espaço que deve ser deixado acima e 
+abaixo da imagem. Valor em pixel. 
+¾ HSPACE: Especifica o espaço que deve ser deixado nas laterais da 
+imagem. Valor em pixel. 
+O único obrigatório é o src. 
+Ex.: 
+Crie um arquivo chamado Imagem.html e insira o código abaixo: 
+<html> 
+<body> 
+<title>Curso de HTML</title> 
+<IMG SRC="img/bullet.gif" ALIGN="left" ALT="Imagem Bullet"> 
+<font size="3" face="arial" color="blue">Esta é a nossa 
+primeira imagem inserida.</font> 
+<br><br>
+<font size="4" face="Courier New" color="orange">Abaixo segue 
+mais imagens na página.</font> 
+<br><br> 
+<IMG SRC="img/calendario.gif" ALIGN="left" ALT="Calendário"> 
+<font size="3" face="arial" color="black">Calendário.</font> 
+<br><br> 
+<IMG SRC="img/search.gif" ALIGN="left" ALT="Buscar"> 
+<font size="3" face="arial" color="black">Buscar.</font> 
+<br><br> 
+<IMG SRC="img/salvar.gif" ALIGN="left" ALT="Salvar"> 
+<font size="3" face="arial" color="black">Salvar.</font> 
+<br><br>
+. LINKS 
+O principal poder do HTML vem da capacidade de interligar partes de um texto, 
+imagens a outros documentos. 
+A interligação entre documentos não se restringe somente às ligações com outras 
+páginas. Em páginas muito longas onde um assunto tem vários tópicos, podemos 
+utilizar índices onde os links têm a função de interligar os tópicos de um texto e 
+que com apenas um clique em um dos tópicos do índice, o item é exibido. 
+4.1 Links para o mesmo diretório 
+Você só precisa especificar o nome do arquivo que será chamado e a sua 
+extensão. 
+Sintaxe: 
+<A HREF = “nomeDoArquivo.extensão”> 
+Texto ou imagem 
+</A> 
+Onde: 
+¾ A: abertura da TAG de link; 
+¾ HREF=”nomeDoArquivo.extensão”: deve ser informado o nome 
+completo do arquivo que será acessado; 
+¾ Texto ou imagem: que servirá como link; 
+¾ /A: encerra a TAG de link. 
+Exemplo: 
+ Edite o primeiro arquivo que criamos index.html. 
+ Substitua o código pelo o que está abaixo: 
+<html> 
+<head> 
+<title> 
+ Curso de HTML 
+</title> 
+</head> 
+<body > 
+ <h1><font face="arial" color="orange">MENU</font></h1> 
+ <HR width="100%" align="left" size="2" color="silver" >
+ <A HREF = "EstiloTexto.html">Estilo de Texto</A> 
+ <br> 
+<A HREF = "ExemploTitulo.html">Títulos e Subtítulos</A> 
+ <br> 
+<A HREF = "LinhaHorizontal.html">LinhaHorizontal</A> 
+ <br> 
+<A HREF = "Fontes.html">Fontes</A> 
+ <br> 
+<A HREF = "Imagem.html">Imagem</A>
+4.2 Links para outro diretório 
+Para criar links para uma página localizada em outros diretórios é necessário 
+indicar o caminho completo do arquivo. Para a WEB isto tem uma forma um pouco 
+diferente do Windows e do DOS, veja: 
+• A barra utilizada para separar os diretórios é a barra convencional (/); 
+• O ponto de partida para localizar um arquivo em outro diretório é o 
+atual; 
+• Para baixar um nível deve utilizar os sinais “../”. 
+Exemplo:
+<A HREF=”../matricula/CadastraAluno.html” > 
+Cadastro de Aluno 
+</A> 
+4.3 Parâmetro NAME 
+O parâmetro NAME serve para marcar um ponto para possíveis desvios. Quando 
+desviamos para um determinado ponto dentro de um documento, indicamos este 
+nome com um "#". Por exemplo: 
+<A NAME="AQUI">Aqui é um ponto para desvios</A>... 
+<A HREF="#AQUI">Desvia para o ponto "AQUI"</A>
+
+5. Listas 
+5.1 - Criando listas ordenadas 
+Listas ordenadas são também denominadas listas numeradas, pois, quando um 
+navegador encontra uma TAG, iniciando uma lista ordenada, ele passa a mostrar 
+cada item utilizando números, como 1, 2, 3, e assim sucessivamente. 
+Listas ordenadas são iniciadas pela TAG <OL>. 
+Cada item utiliza a TAG <LI>. 
+Finalmente, </OL>. 
+Sintaxe: 
+<OL TYPE=”formato” START=”n”> 
+ <LI> Tópico 1 
+ <LI> Tópico 2 
+ <LI> Tópico n 
+</OL>
+Onde: 
+¾ <OL>: início da lista numerada; 
+¾ TYPE=”formato”: o formato da numeração pode ser: 
+ 1: lista numérica (não é necessário ser definido); 
+ A: lista alfabética com letras maiúsculas; 
+ A: lista alfabética com letras minúsculas; 
+ I: Lista numérica com números romanos maiúsculos; 
+ I: lista numérica com números romanos minúsculos; 
+¾ START=”n”: o valor inicial de uma lista numerada; 
+¾ <LI>: tópicos da lista; 
+¾ </OL>: fim da lista numerada; 
+Exemplo: 
+Crie um arquivo chamado Listas.html e insira o código abaixo: 
+ 
+Curso de HTML
+
+<center><h1>Listas Ordenadas</h1></center> 
+<h3>Cursos</h3>
+<OL> 
+ <LI>Graduação 
+ <LI>Pós-Graduação Lato Sensu 
+ <LI>Cursos de Pós-Graduação Stricto Sensu 
+</OL>
+5.2 - Criando listas não ordenadas 
+Listas não ordenadas são muito parecidas com as ordenadas. A única diferença é 
+o fato de elas não definirem explicitamente uma ordem, como é no caso as
+numeradas. Eles são formados por símbolos, que podem ser bola, quadrado, e 
+uma bola vazia. Elas são iniciadas com a TAG <UL> e são respectivamente 
+terminadas com </UL>. E seus elementos são que nem as numeradas: com <LI>. 
+Sintaxe: 
+<UL TYPE=”formato”> 
+<LI> Tópico 1 
+ <LI> Tópico 2 
+<LI> Tópico 3 
+ </UL>
+ Onde: 
+¾ <UL> : Início da lista pontuada; 
+¾ TYPE=”formato”: o formato do marcador pode ser: 
+ disc: o marcador é um ponto (padrão utilizado pelos 
+navegadores, não precisa indicar); 
+ square: o marcador é um quadrado; 
+ circle: o marcador é um ponto. 
+¾ <LI>: tópicos da lista, não é necessário encerrar a TAG; 
+¾ </UL>: fim da lista pontuada 
+Exemplo: 
+Acrescente o código abaixo no arquivo Listas.html: 
+<br> 
+<center><h1>Listas Não Ordenadas</h1></center> 
+<h3>Membro da Comunidade Acadêmica</h3> 
+<UL TYPE = “disc”> 
+ <LI>Aluno 
+ <LI>Docente 
+ <LI>Técnico Administrativo 
+</UL>
+
+6. Tabelas 
+Tabelas correspondem a um ótimo formato para originar informações, e é por essa 
+razão que eles foram acrescentados à linguagem HTML. 
+6.1 - Construindo tabelas com o elemento TABLE 
+ 
+A TAG <TABLE> é utilizada para a representação de dados tabulares. A estrutura 
+e o conteúdo da tabela devem ficar dentro das TAGs <TABLE> </TABLE> 
+ 
+6.1.1 - O título da tabela (elemento CAPTION) 
+ 
+A TAG <CAPTION> especifica o título de uma tabela. Por exemplo: 
+<CAPTION>Notas da primeira avaliação</CAPTION> 
+6.1.2 - TABLE HEADINGS (elemento TH) 
+ 
+A TAG <TH> é usada para especificar as células de cabeçalho da tabela. Essas 
+células são diferentes das outras, pois seu conteúdo aparece geralmente em 
+negrito. O elemento TH pode ser apresentado sem conteúdo algum: isso 
+corresponde a uma célula em branco. As tabelas podem ainda conter mais de um 
+TH para uma dada coluna, ou linha, ou simplesmente não conter nenhum 
+elemento TH, isto é, não conter em nenhuma célula em destaque. O TAG dela é: 
+<TH>texto em destaque</TH>
+ 
+Observações: Elas devem ficar, assim como todas, dentro da TAG <TABLE>. 
+ 
+6.1.3 - TABLE DATA (elemento TD) 
+A TAG <TD> especifica a células de dados de uma tabela. Por se tratar de dados 
+comuns (e não cabeçalhos), essas células possuem seu conteúdo escrito em 
+fonte normal, sem nenhum destaque e alinhamento à esquerda. Assim como o 
+TH, pode-se construir células em branco, usando o elemento TD, como no 
+exemplo a seguir: 
+<TD>Células de dados</TD> 
+ 
+Observações: A TAG de terminação, <TD>, também é opcional.
+
+6.1.4 - END OF TABLE ROW (elemento TR) 
+A TAG <TR> indica o início de uma linha na tabela. Cada linha da tabela pode 
+conter várias células, e, portanto, é necessário que se faça uso de uma marcação 
+que indique exatamente o ponto de quebra de uma linha e início de outra. Toda 
+linha deve terminar com um </TR>. 
+ 
+6.2 - Atributos para a tabela 
+As marcações das tabelas podem apresentar resultados diferentes, se 
+acompanhadas de alguns atributos. Os principais são: 
+ 6.2.1 - BORDER 
+Um atributo opcional para ser usado com TABLE é o atributo BORDER. Se ele 
+estiver presente, a tabela será formatada com linhas de borda. 
+ 
+Atenção: Todas as explicações acima como as que estão por vir, foram feitas, 
+para que você possa saber o que significa a TAG em questão. 
+Exemplo: 
+ 
+<TABLE BORDER> 
+<CAPTION> Nota da primeira avaliação </CAPTION> 
+<TD>Notas/Alunos</TD> 
+<TH>Eduardo</TH> 
+<TH>Ana Lúcia</TH> 
+<TH>Andréa</TH> 
+<TR> 
+<TH>Notas</TH> 
+<TD>8,0</TD> 
+<TD>9.3<TD> 
+<TD>7.8</TD> 
+<TR> 
+<TH>No de Inscrição</TH> 
+<TD>376234809</TD> 
+<TD>387349048</TD> 
+<TD>502350432</TD> 
+</TABLE>
+Veja o resultado:
+O atributo BORDER pode também receber um valor que vai estabelecer qual a 
+espessura (além da existência) da linha de borda da tabela (BORDER="valor"). Se 
+o valor atribuído for 0 (zero), o BORDER funciona exatamente como o caso 
+padrão, sem o BORDER. Dessa maneira, é possível colocar tabelas em maior 
+destaque, atribuindo um valor maior que 1 para o BORDER. 
+ 
+<TABLE BORDER=5> 
+<TR> 
+<TD>TESTE</TD> 
+<TD>TESTE2</TD> 
+<TD>TESTE3</TD> 
+</TR> 
+<TR> 
+<TD>TESTE4</TD> 
+<TD>TESTE5</TD> 
+<TD>TESTE6</TD> 
+</TR> 
+</TABLE> 
+ Veja o resultado: 
+6.2.2 - ALIGN 
+Este atributo pode ser aplicado a TH, TD ou TR e controla o alinhamento do texto 
+dentro de uma célula, com relação as bordas laterais. Quando aplicado a TR, ele 
+define o alinhamento de toda uma linha da tabela. 
+O exemplo abaixo mostra como o ALIGN aceita os valores LEFT, CENTER ou 
+RIGHT, para alinhar à esquerda, centralizar ou alinhar à direita, respectivamente. 
+<TABLE BORDER> 
+<TD>Primeira célula</TD> 
+<TD>Segunda célula</TD> 
+<TD>Terceira célula</TD> 
+<TR>
+<TD ALIGN="CENTER">Centro</TD> 
+<TD ALIGN="LEFT">Esquerda</TD> 
+<TD ALIGN="RIGHT">Direita</TD> 
+ <TR> 
+ </TABLE> 
+ 
+Veja o resultado: 
+ 
+6.2.3 - VALIGN 
+Pode ser aplicado a TH e TD e define o alinhamento do texto em relação às
+bordas superior e inferior. 
+Aceite os valores TOP, MIDDLE, E BOTTOM para alinhar na parte de cima, no 
+meio e na parte de baixo, respectivamente. 
+Veja o exemplo: 
+<TABLE BORDER> 
+<TD>Teste de alinhamento</TD> 
+<TD VALIGN="TOP">TOP</TD> 
+<TD VALIGN="middle">MIDDLE</TD> 
+<TD VALIGN="bottom">BOTTOM</TD> 
+</TABLE> 
+ 
+Veja o resultado: 
+ 
+ 
+6.2.4 – CELLSPACING 
+Este atributo compreende a distância entre células e linhas. 
+Deve ser adicionado dentro da TAG <TABLE>. 
+Como padrão dos navegadores a distância é 2 pixels. 
+Exemplo:
+<TD ALIGN="CENTER">Centro</TD> 
+<TD ALIGN="LEFT">Esquerda</TD> 
+<TD ALIGN="RIGHT">Direita</TD> 
+ <TR> 
+ </TABLE> 
+ 
+Veja o resultado: 
+ 
+6.2.3 - VALIGN 
+Pode ser aplicado a TH e TD e define o alinhamento do texto em relação às
+bordas superior e inferior. 
+Aceite os valores TOP, MIDDLE, E BOTTOM para alinhar na parte de cima, no 
+meio e na parte de baixo, respectivamente. 
+Veja o exemplo: 
+<TABLE BORDER> 
+<TD>Teste de alinhamento</TD> 
+<TD VALIGN="TOP">TOP</TD> 
+<TD VALIGN="middle">MIDDLE</TD> 
+<TD VALIGN="bottom">BOTTOM</TD> 
+</TABLE> 
+ 
+Veja o resultado: 
+ 
+ 
+6.2.4 – CELLSPACING 
+Este atributo compreende a distância entre células e linhas. 
+Deve ser adicionado dentro da TAG <TABLE>. 
+Como padrão dos navegadores a distância é 2 pixels. 
+Exemplo:
+<TD WIDTH=”17%”> coluna 5 </TD> 
+</TR> 
+<TR> 
+<TD WIDTH=”16%”> coluna 2 </TD> 
+<TD WIDTH=”16%”> coluna 3 </TD> 
+<TD WIDTH=”17%”> coluna 4 </TD> 
+<TD WIDTH=”17%”> coluna 5 </TD> 
+</TR> 
+<TR> 
+<TD WIDTH=”16%”> coluna 2 </TD> 
+<TD WIDTH=”16%”> coluna 3 </TD> 
+<TD WIDTH=”17%”> coluna 4 </TD> 
+<TD WIDTH=”17%”> coluna 5 </TD> 
+</TR> 
+</TABLE> 
+6.2.7 – COLSPAN 
+Este atributo define quantas colunas uma célula pode abranger. Por padrão, na 
+maioria dos navegadores de Internet cada célula adicionada em uma tabela 
+corresponde a uma coluna. Pode ser aplicado em TH ou TD, proporcionando a 
+mesma abrangência. 
+<h3>Exemplo com COLSPAN</h3> 
+<TABLE BORDER=”1” WIDTH=”80%” ALIGN=”center”> 
+<TR> 
+<TD WIDTH=”24%” COLSPAN=”3”>Célula com 3 colunas </TD> 
+<TD WIDTH=”20%”>coluna 4</TD> 
+<TD WIDTH=”20%”>coluna 5</TD> 
+</TR> 
+<TR> 
+<TD WIDTH=”20%”>coluna 1</TD> 
+<TD WIDTH=”20%”>coluna 2</TD> 
+<TD WIDTH=”20%”>coluna 3</TD> 
+<TD WIDTH=”20%”>coluna 4</TD> 
+<TD WIDTH=”20%”>coluna 5</TD> 
+</TR> 
+</TABLE>
+6.2.8 – Largura da célula 
+Para alterar a largura de uma célula da tabela basta acrescentar o parâmetro WIDTH dentro da tag 
+<TD>. Exemplo1: 
+ 
+<TABLE BORDER=2> 
+<TR> 
+<TD WIDTH=100> WIDTH=100</TD> 
+<TD ALIGN=MIDDLE WIDTH=200>WIDTH=200 (PIXELS)</TD> 
+</TR> 
+</TABLE> 
+6.2.9 – Cor de fundo das células 
+Outro atributo que podemos ter nas tabelas é mudar a sua cor de fundo, isto se torna 
+particularmente útil quando se quer dar destaque a uma célula em especial.
+Vejamos um exemplo: 
+ 
+<TABLE BORDER=0> 
+<TR> 
+<TD WIDTH=150 BGCOLOR=RED>VERMELHO </TD> 
+<TD WIDTH=150 BGCOLOR=BLUE>AZUL </TD> 
+<TD WIDTH=150 BGCOLOR=RED>VEMELHO</TD> 
+</TR> 
+<TR> 
+<TD WIDTH=150 BGCOLOR=BLUE>AZUL</TD> 
+<TD WIDTH=150 BGCOLOR=RED>VEMELHO</TD> 
+<TD WIDTH=150 BGCOLOR=BLUE> AZUL</TD> 
+</TR> 
+</TABLE>
+7. Formulários 
+A linguagem HTML também permite que o cliente (navegador) interaja com o 
+servidor, preenchendo campos, clicando em botões e passando informações. 
+O elemento FORM, da linguagem HTML, é justamente o responsável por tal 
+interação. Ele provê uma maneira agradável e familiar para coletar dados do 
+usuário através da criação de formulários com janelas de entrada de textos, 
+botões, etc. 
+7.1 - Construindo formulários com o FORM 
+Para fazer formulário, você tem que colocar as TAGs <FORM> </FORM>. Todos 
+os outros comandos, devem ficar dentro dessas TAGs. Ok?! 
+7.2 - Atributos para FORM 
+O elemento FORM pode conter dois atributos que determinaram para onde será 
+mandada a entrada do FORM. Vejam como eles são: 
+7.2.1 – GET 
+Os dados entrados fazem parte do URL associado à consulta enviado para o 
+servidor e suporta até 128 caracteres. 
+7.2.2 – POST 
+É o mais utilizado, pois envia cada informação de forma separada da URL. Com 
+este método POST os dados entrados fazem parte do corpo da mensagem 
+enviada para o servidor e transfere grande quantidade de dados. 
+7.2.3 – INPUT 
+A TAG <INPUT> especifica uma variedade de campos editáveis dentro de um 
+formulário. Ele pode receber diversos atributos que definem o tipo de mecanismo 
+de entrada (botões, janelas de texto, etc.), o nome da variável associada com o 
+dado da entrada, o alinhamento e o campo do valor mostrado. O atributo mais 
+importante do INPUT é o NAME. Ele associa o valor da entrada do elemento. Por
+exemplo, quando você for receber os dados, já, processados, irá vir o name: = 
+resposta dada pelo visitante. Outro atributo importante é o TYPE. Ele determina o 
+campo de entradas de dados. Veja como se usa este atributo: 
+<INPUT TYPE="TEXT" NAME="nome"> 
+Para mudar o tamanho, da janela padrão, você tem que colocar o comando SIZE.
+Por exemplo: 
+<INPUT TYPE "TEXT" NAME="nome" SIZE=8>(ou número desejado) 
+Outro comando importante é o VALUE. Ele acrescenta uma palavra digitada no
+comando à janela. Por exemplo: 
+<INPUT TYPE "TEXT" NAME="nome" SIZE=8 VALUE="texto."> 
+Olhe como ficaria: 
+7.2.3.1 - Tipos de elementos TYPE 
+Você pode fazer várias coisas com o elemento TYPE. Por exemplo, para ser um 
+campo de senha, que quando digitado, apareça o símbolo "*", ao invés das letras, 
+você deve escrever o seguinte: 
+<INPUT TYPE"PASSWORD" NAME="nome" SIZE=8> 
+7.2.3.1.1 - TYPE="RADIO" 
+Quando o usuário deve escolher uma resposta em uma única alternativa,
+de um conjunto, utiliza-se o RADIO Buttons. Um exemplo típico do uso de
+tais botões é cuja resposta pode ser SIM ou NÃO. É preciso que todos os 
+rádios buttons de um mesmo grupo, ou seja, referentes à mesma pergunta,
+tenham o mesmo atributo NAME. Para esse tipo de entrada, os atributos
+NAME e VALUE, são necessários. Veja a seguir:
+<INPUT TYPE="RADIO" NAME="você gostou dessa home page?" 
+VALUE="sim">sim<p> 
+<INPUT TYPE="RADIO" NAME="você gostou dessa home page?" 
+VALUE="nao">não<p> 
+Repare: 
+7.2.3.1.2 - TYPE="PASSWORD" 
+Este comando serve para fazer um campo de senhas! Quando a pessoa 
+digitar, aparecerá o sinal de "*"! O comando é: 
+<INPUT TYPE="PASSWORD" NAME="SENHA" MAXLENGHT=6> 
+7.2.3.1.3 - TYPE="CHECKBOX" 
+Esse comando é válido quando apenas uma resposta, é esperada. Mas
+nem sempre esta é a situação...O tipo CHECKBOX provê outros botões
+através dos quais mais de uma alternativa, pode ser escolhida. 
+Definição dos checkboxs: 
+<INPUT TYPE="CHECKBOX" NAME="netscape" VALUE="net"> 
+Netscape<p> 
+<INPUT TYPE="CHECKBOX" NAME="Explorer" VALUE="exp"> 
+Internet Explorer<p> 
+<INPUT TYPE="CHECKBOX" NAME="Mosaic" VALUE="mos"> 
+Mosaic<P> 
+<INPUT TYPE="CHECKBOX" NAME="Hot Java" VALUE="hot"> Hot 
+Java<P> 
+Veja o resultado:
+7.2.3.1.4 - TYPE="SUBMIT" 
+Esse é o botão que submete os dados do formulário quando pressionados,
+ou seja, possibilitam, o envio, dos dados para o script que vai tratá-los. Veja
+como se adiciona o botão: 
+<INPUT TYPE="SUBMIT" VALUE="enviar"> 
+Veja como ficará: 
+7.2.3.1.5 - TYPE="RESET" 
+No caso dos botões RESET, quando o botão é clicado, ele 
+automaticamente limpa todos os campos já preenchidos no formulário, 
+voltando à situação inicial. 
+<INPUT TYPE="RESET" VALUE="Limpar">
+Veja como ficará:
+7.2.4 – TEXTAREA 
+Para se limitar o tamanho do campo mostrado na tela, faz-se o uso dos atributos
+COLS e ROWS que especificam, respectivamente, o número de colunas e linhas
+que se deseja mostrar para o usuário. O atributo NAME é obrigatório, e especifica 
+o nome da variável, que será associada à entrada do cliente (navegador). O 
+atributo VALUE não é aceito nesse elemento, mas você pode colocar já um texto 
+da seguinte maneira. Veja como ele é colocado:
+<TEXTAREA NAME="nome" COLS=20 ROWS=3>texto</TEXTAREA>
+7.2.5 – SELECT 
+Permite definir uma lista de opções, com barra de rolagem ou fixa na tela do 
+navegador. 
+É uma TAG que deve ser iniciada com <SELECT> e finalizada com </SELECT>. 
+Sintaxe: 
+<SELECT MULTIPLE NAME=”nomeDaLista”> 
+<OPTION SELECTED VALUE=”valor de retorno”> 
+Valor Visualizado 
+<OPTION VALUE=”Valor de retorno”> 
+Valor Visualizado 2 
+ </SELECT> 
+Onde: 
+¾ NAME: obrigatório, serve para a identificação da lista; 
+¾ OPTION: item da lista; 
+¾ MULTIPLE: com este atributo a lista aparecerá sempre aberta; 
+¾ SELECTED: indica o valor padrão da lista; 
+¾ VALUE: valor a ser retornado ao servidor. 
+Exemplo: 
+<SELECT MULTIPLE NAME=”Estados”> 
+<OPTION SELECTED VALUE=”SP”> São Paulo 
+<OPTION VALUE=”RJ”> Rio de Janeiro 
+ <OPTION VALUE=”MG”> Minas Gerais 
+<OPTION VALUE=”ES”> Espírito Santo 
+ </SELECT> 
+7.2.6 – Exemplo completo de formulário
+Mostraremos a seguir um exemplo completo de um formulário para Cadastro de 
+Conselhos. Utilizaremos também a tag TABLE para alinhar os campos do 
+formulário na tela em questão. Crie um arquivo com nome de CadConselho.html e 
+copie o exemplo abaixo: 
+<html> 
+<body> 
+<title>Órgão Colegiado</title> 
+<TABLE BORDER=1 BGCOLOR="blue" width="100%"> 
+<TH ><font color="white">Cadastro de Conselho</font></TH> 
+</TABLE> 
+<FORM NAME="form_conselho" METHOD="POST"> 
+<h4>Programa</h4> 
+<table width="100%"> 
+ <tr> 
+ <td width="15%"><font size="3" face="arial"> Unidade</font></td> 
+ <td><input type="text" name="codUnidade" size="5"></td> 
+ <td><input type="text" name="unidade" size="80"></td> 
+ </tr> 
+ <tr> 
+ <td width="15%"><font size="3" face="arial"> Programa</font></td> 
+ <td><input type="text" name="codPrograma" size="5"></td> 
+ <td><input type="text" name="programa" size="80"></td> 
+ </tr> 
+</table> 
+<h4>Conselho de Programa de Pós-Graduação</h4> 
+<table width="100%"> 
+ <tr> 
+ <td width="15%"><font size="3" face="arial">Código</font></td> 
+ <td><input type="text" name="codigo" size="5"></td> 
+ </tr> 
+ <tr> 
+ <td width="15%"><font size="3" face="arial">Nome</font></td> 
+ <td><input type="text" name="nome" size="100"></td> 
+ </tr> 
+ <tr> 
+ <td width="15%"><font size="3" face="arial">Tipo</font></td> 
+ <td> 
+ <select name="tipo"> 
+ <option > 
+ <option value="1">COMISSOES TRANSITORIAS DE ESTUDOS 
+ <option value="2">CONSELHOS DE DEPARTAMENTO 
+ <option value="3">COMISSOES PERMANENTES DE UNIDADE 
+ADMINISTRATIVA 
+ </select> 
+ </td> 
+ </tr> 
+ <tr> 
+ <td width="15%"><font size="3" face="arial">Fundamento</font></td> 
+ <td> 
+ <TEXTAREA NAME="fundamento" COLS=50 ROWS=3></TEXTAREA>
+ </td> 
+ </tr> 
+ <tr> 
+ <td align="center" colspan="2"> 
+ <INPUT TYPE="SUBMIT" VALUE="Salvar"> 
+ </td> 
+ </tr> 
+</table> 
+</FORM>
+8. Frames 
+É um recurso que permite dividir uma página de Internet em outras, na mesma 
+página. Nada mais é que uma página que “chama” outras na página inicial que um 
+documento html que contém frames. 
+Em um determinado arquivo como o index.html, é onde pode ser definido a 
+estrutura das novas janelas para o seu HTML. 
+8.1 - Estrutura 
+Assim como o corpo do HTML, os FRAMES tem sua estrutura. Eles entram no 
+lugar do corpo, substituindo o <BODY></BODY> por 
+<FRAMESET></FRAMESET>. 
+Exemplo: 
+<HTML> 
+<HEAD> 
+<TITLE> Título do Documento </TITLE> 
+</HEAD> 
+<FRAMESET> 
+Sintaxe dos Frames 
+</FRAMESET> 
+</HTML> 
+8.2 - Sintaxe 
+Primeiramente devemos fazer um documento HTML para ele ser especificado pela 
+sintaxe de FRAMES, no caso chamado de Frame1.htm.
+<FONT SIZE=+1> <B> Frame n1 </B> </FONT> 
+</BODY> 
+</HTML>
+8.3 – FRAMESET 
+A primeira especificação é o FRAMESET, que é acompanhado pelas definições
+ROWS e COLS. 
+8.3.1 - ROWS
+ 
+Especifica o número de FRAMES e a altura de cada um. 
+Exemplo: 
+<FRAMESET ROWS="20%,30%,50%"> 
+<FRAME SRC="Frame1.html"> 
+<FRAME SRC="Frame1.html"> 
+<FRAME SRC="Frame1.html"> 
+</FRAMESET> 
+Neste exemplo de cima, ele chama três FRAMES, o 1º com 20% da tela, o 2º com
+30% da tela, o 3º com 50% da tela (ambos em altura).
+8.3.2 – COLS
+Especifica o número de FRAMES e a largura de cada um. 
+Exemplo: 
+<FRAMESET COLS="20%,30%,50%"> 
+<FRAME SRC="Frame1.html"> 
+<FRAME SRC="Frame1.html"> 
+ <FRAME SRC="Frame1.html"> 
+</FRAMESET> 
+Neste exemplo de cima, ele chama três FRAMES, o 1º com 20% da tela, o 2º com
+30% da tela, o 3º com 50% da tela (ambos em largura). 
+8.4 – FRAME 
+A segunda especificação é o FRAME, que é acompanhado pelas definições SRC, 
+NAME, SCROLLING, NORESIZE, TARGET.
+8.4.1 – SRC 
+Especifica o documento de formato HTML chamado para o FRAME. 
+Indispensável, por que sem ele só o documento aparecerá vazio, só com as 
+divisões. 
+Exemplo: 
+<FRAMESET COLS="20%,30%,50%"> 
+<FRAME SRC="Frame1.html"> 
+ <FRAME SRC="Frame1.html"> 
+ <FRAME SRC="Frame1.html"> 
+</FRAMESET> 
+8.4.2 - NAME 
+Especifica o nome do documento de formato HTML chamado para o FRAME. 
+É extremamente necessário para o uso do TARGET, que será visto a seguir. 
+Exemplo: 
+<FRAMESET COLS="20%,30%,50%"> 
+<FRAME SRC="Frame1.html" NAME="Principal"> 
+ <FRAME SRC="Frame1.html"> 
+ <FRAME SRC="Frame1.html"> 
+</FRAMESET> 
+8.4.3 – SCROLLING 
+Define se o Frame terá barra de rolagem, o default é Auto. 
+Fornece as opções: Yes, No, Auto. 
+Yes - Exibe a barra de rolagem independente do tamanho do documento. 
+No - Não exibe a barra de rolagem, mesmo que o documento seja maior 
+que o tamanho especificado. 
+Auto - Só exibe a barra de rolagem se o documento for maior que a área 
+especificada.
+Exemplo: 
+<FRAMESET COLS="20%,30%,50%" 
+<FRAME SRC="Frame1.html" SCROLLING="no"> 
+<FRAME SRC="Frame1.html" SCROLLING="yes"> 
+<FRAME SRC="Frame1.html" SCROLLING="auto"> 
+</FRAMESET> 
+8.4.4 – NORESIZE 
+Impossibilita o usuário de mudar o tamanho da área especificada do FRAME. 
+Por default o usuário pode mudar esta área. 
+Exemplo: 
+<FRAMESET COLS="20%,30%,50%"> 
+<FRAME SRC="Frame1.html" NORESIZE> 
+<FRAME SRC="Frame1.html" > 
+<FRAME SRC="Frame1.html" > 
+</FRAMESET>
+8.4.5 – TARGET 
+Define qual a área (FRAME) que aparecerá o documento especificado pelo link. 
+Mais útil na utilização de Menus e índices. 
+Necessita do NAME. 
+Exemplo: 
+<FRAMESET COLS="20%,30%,50%"> 
+<FRAME SRC="Frame1.html" NAME="Principal"> 
+<FRAME SRC="Frame1.html"> 
+<FRAME SRC="Frame1.html"> 
+</FRAMESET> 
+O Link: 
+<A HREF="http://www.unesp.br" TARGET="Principal"> Unesp </A> 
+Se você quiser criar um link que chama uma nova tela do browser basta 
+colocar TARGET="um nome que não existe". 
+8.5 – BORDER 
+Define qual a borda que o FRAME terá. 
+Mais útil na utilização de BACKGROUNDS iguais. 
+Exemplo: 
+<FRAMESET COLS="20%,30%,50%" FRAMEBORDER="NO" BORDER=0> 
+<FRAME SRC="Frame1.html" FRAMEBORDER="NO" BORDER=0> 
+<FRAME SRC="Frame1.html" FRAMEBORDER="NO" BORDER=0> 
+<FRAME SRC="Frame1.html" FRAMEBORDER="NO" BORDER=0> 
+</FRAMESET>
+
+
+<P>
+9. Tabelas de Cores 
+Esta tabela de cores pode ser usar quando quiser definir as cores de uma fonte de 
+um texto ou então quando quiser definir o fundo de uma página. Deve-se usar o 
+nome que está em inglês. 
+Branco White 
+Preto Black 
+Azul Blue 
+Amarelo Yellow 
+Verde Green 
+Laranja Orange 
+Vermelho Red 
+Rosa Pink 
+Cinza Gray 
+Ouro Gold 
+Verde azulado Teal 
+Azul marinho Navy 
+Prata Silver 
+Também poderá ser usado o nome em hexadecimal para definir a cor: 
+#FFFFFF (Branco) #00FF00 (Verde) #00FFFF (Cian) #C0C0C0 (Cinza) 
+#000000 (Preto) #0000FF (Azul) #FFFF00 (Amarelo) #BC8F8F (Pink) 
+#FF0000 (Vermelho) #FF00FF (Magenta) #A8A8A8 (Cinza claro) #4F2F4F (Violeta)
+<P>
+10. CSS 
+10.1 O que é CSS? 
+CSS é a mesma coisa que Style Sheets e que Folhas de Estilo. Você já deve ter 
+visto esses nomes em vários lugares. CSS é mais uma forma de aperfeiçoar seus 
+documentos, o CSS tem muitos tipos de definição aqui veremos muitas delas.
+No que eles podem nos ajudar?
+• Economizar o seu tempo. 
+• Diminuir o tamanho do código de sua página. 
+• Sua página irá carregar mais rapidamente. 
+• Mais facilidade de manter e fazer alterações na página. 
+• Mais controle no layout da página. 
+10.2 Como criar estilos 
+Cada estilo que você cria é definido como uma regra CSS. Cada regra deve 
+utilizar a seguinte sintaxe: 
+elemento {atributo1: valor; atributo2: valor ...} 
+Explicação desta sintaxe: 
+Elemento - descreve o elemento de design ao qual o estilo será aplicado. A 
+mesma tag HTML mas, sem os sinais de maior e menor. Essa parte da regra é às 
+vezes chamada de seletor. 
+Atributo - o aspecto específico do elemento que você quer usar como estilo. Deve 
+ser um nome de atributo CSS válido, como o atributo font-size. 
+Valor - a configuração aplicada ao atributo. Deve ser uma configuração válida 
+para o atributo em questão, como 20pt (20 pontos) para font-size. 
+Atributo: valor - à parte declaração da regra. Você pode atribuir múltiplas 
+declarações se desejar separá-los com ponto-e-vírgula (;). Não coloque um ponto-
+e-vírgula depois da última declaração.
+<P>
+Agora é hora de exemplos. Eis uma regra CSS que especifica que todos os títulos 
+de nível 1 (tags <H1>) sejam exibidos em uma fonte de 36 pontos: 
+H1 {font-size: 36pt} 
+Aqui está um exemplo de regra que diz que todos os títulos de nível 2 (tags <H2>) 
+devem ter tamanho de 24 pontos e cor azul; 
+H2 {font-size: 24pt; color: blue} 
+Você pode inserir quebras de linha e espaços em branco dentro da regra 
+como quiser. Assim, é possível ver mais facilmente todas as declarações e 
+certificar-se de que colocou todos os sinais de ponto-e-vírgula e colchetes nos 
+lugares corretos. Por exemplo, aqui está uma regra que diz que os parágrafos 
+aparecerão em fonte Times, 12 pontos, azul e recuados meia polegada a partir da 
+margem esquerda da página: 
+P {font-family: Times; 
+font-size: 12pt; 
+color: blue; 
+margin-left: 0.5in} 
+Note como é fácil aplicar todas as declarações ao elemento parágrafo (P) e como 
+cada declaração, exceto a última, é seguida pelo caracter de ponto-e-vírgula 
+exigido. 
+10.3 Tipos de Folhas de Estilo 
+Você pode definir regras de CSS em três lugares. E, por definição, pode utilizar 
+uma combinação dos três métodos nos seus web sites. A maneira como as regras 
+interagem entre si está relacionada à parte "em cascata".Os três lugares são: 
+1) em um documento separado fora de todos os documentos HTML; 
+2) no cabeçalho de um documento HTML e, 
+3) dentro de uma tag de HTML. Cada um destes métodos tem um nome e 
+afeta as páginas HTML em seu site de um modo diferente, como discutido aqui: 
+Externo - Externo significa que você coloca as regras de CSS em um arquivo 
+separado, e então sua página HTML pode fazer um link para esse arquivo. Essa 
+abordagem lhe permite definir regras em um ou mais arquivos que podem ser 
+aplicadas em alguma página do seu web site.
+Incorporado - Incorporado significa que você especifica as regras de CSS no 
+cabeçalho do documento. As regras incorporadas afetam somente a página atual. 
+Inline - Inline significa que você especifica as regras de CSS dentro da tag de 
+HTML. Essas regras afetam somente a tag atual.
+10.3.1 Estilos Externos 
+Para definir um conjunto de regras de estilo que você pode facilmente 
+aplicar em alguma página do seu site, é preciso colocar as regras em um 
+arquivo de texto. Você pode criar este arquivo com um editor de textos 
+simples, como o Notepad do Windows, e dar ao nome desse arquivo a 
+extensão .css. 
+Sempre que quiser utilizar esses estilos em uma nova página, basta colocar 
+uma tag <LINK> no cabeçalho que referencie esse arquivo .css. Veja o 
+exemplo: 
+Arquivo OrgaoColegiado.css
+H4 { 
+ font-family: 'Arial'; 
+ font-size: 14pt; 
+ color: blue 
+} 
+Agora, para utilizar os estilos definidos neste arquivo .css você precisa 
+adicionar a tag a seguir ao cabeçalho da página, onde nome_do_arquivo é 
+uma referência absoluta ou relativa ao arquivo .css. 
+<LINK REL="STYLESHEET" 
+HREF=" OrgaoColegiado.css" TYPE="text/css"> 
+OBS: Você deve inserir este texto entre as tags <HEAD>...</HEAD>, e 
+colocar a localização correta do seu arquivo e seu nome.
+ 10.3.2 Estilos Incorporados 
+Se quiser criar um conjunto de estilos que se aplicam a uma única página, 
+você pode configurar os estilos exatamente como fizemos no exemplo dos 
+estilos externos - mas em vez de colocar as tags <STYLE>...</STYLE>, e 
+as regras em um arquivo separado, coloque estas tags na própria página.
+<P>
+HTML. A estrutura básica de uma página da web que utiliza estilos 
+incorporados é semelhante ao seguinte código: 
+<HTML> 
+<HEAD> 
+<TITLE>Exemplo Estilos Incorporados</TITLE> 
+<STYLE TYPE="text/css"><!-- 
+P { 
+ background-color: #FFFFFF; 
+ font-family:'Comic Sans MS'; 
+ font-size: 14pt 
+} 
+--></STYLE> 
+</HEAD> 
+</BODY> 
+</HTML> 
+ 
+ 10.3.3 Estilos Inline 
+Os estilos inline são os que têm menos efeitos. Eles afetam somente a tag 
+atual - não outras tags na página e tampouco outros documentos. A sintaxe 
+para definir um estilo inline é a seguinte: 
+Exemplo: <A STYLE="color: green; text-
+decoration: none" HREF="http://www.unesp.br"> 
+Note que em vez das tags <STYLE>...</STYLE>, você apenas utiliza um 
+atributo STYLE dentro da tag para definir o estilo. E, em vez de colocar as 
+regras de CSS entre colchetes, você as coloca entre aspas, separando-as 
+com ponto-e-vírgula como de costume. 
+10.4 Tags Personalizadas 
+Com as classes de estilo, é possível definir diversas variações de uma única tag. 
+Por exemplo, você poderia fazer um estilo de parágrafo "texto alinhado à direita", 
+um estilo de parágrafo "texto centralizado" e assim por diante, criando múltiplos 
+temas em torno da tag de parágrafo. (<P>)
+Você pode definir classes de estilo tanto em folhas de estilo externa como nas 
+incorporadas. (Não há sentido em definir uma classe em um estilo inline!) A 
+sintaxe é praticamente idêntica à sintaxe normal para os estilos externo e 
+incorporado, com adição de um ponto e o nome da classe depois do elemento na 
+qual será utilizado o atributo. 
+<STYLE TYPE="text/css"><!-- 
+elemento.nomedaClasse {atributo:valor; ... } 
+--></STYLE> 
+Exemplo: 
+Adicionar esta TAG dentro da TAG <Head> da página index.html: 
+<STYLE TYPE="text/css"><!-- 
+A.meuslinks { 
+color: blue; 
+text-decoration: none 
+} 
+--></STYLE> 
+Depois apenas adiciono o atributo CLASS="meuslinks" aos links em que eu 
+desejar que fiquem azuis e não-sublinhados. Veja como deve ficar:
+<A CLASS="meuslinks" HREF="EstiloTexto.html"> 
+Estilo de Texto 
+</A>
+<P>
+10.4.1 Utilizando a TAG <DIV> 
+As tags HTML <DIV>...</DIV> podem ser usadas para formatar um grande 
+bloco de texto - uma divisão - abrangendo diversos parágrafos e outros 
+elementos. Isso as torna uma boa opção para definir estilos que afetam 
+grandes seções de um texto em uma página. Veja: 
+<STYLE TYPE="text/css"><!-- 
+DIV.sidebar { 
+font=family: "Arial"; 
+font-size: 12pt; 
+text-align: right; 
+background-color: #C0C0C0; 
+margin-left: 1in; 
+margin-right: 1in 
+} 
+--></STYLE> 
+Ao colocar na tag <DIV> o atributo CLASS, você estará fazendo com que 
+todos os elementos que estejam englobados nesta tag sigam estes 
+padrões. 
+<BODY> 
+Cursos: 
+<OL> 
+<LI>Selecione 
+<DIV CLASS="sidebar">Matemática</DIV> 
+<br> 
+<DIV CLASS="sidebar">Medicina</DIV> 
+</OL></BODY> 
+ 10.4.2 Utilizando a TAG <SPAN> 
+ 
+As tags <SPAN>...</SPAN> são como tags <DIV>...</DIV> no sentido de 
+que você pode utilizá-las para definir estilos que formatam um bloco de 
+texto. Ao contrário de <DIV>, contudo, que é utilizada para divisões de texto 
+grandes, a tag <SPAN> é especializada para blocos de textos menores - 
+que podem ser tão pequenos como um único caracter. Veja um bom 
+exemplo do que se pode fazer utilizando esta tag. 
+<STYLE TYPE="text/css"><!-- 
+SPAN.hot { 
+color:green;
+text-decoration: underline} 
+--></STYLE> 
+Utilizada no código HTML... 
+<BODY> 
+Para sair de um programa: 
+<OL> 
+<LI>Selecione <SPAN CLASS="hot">A</SPAN>rquivo 
+- 
+<SPAN CLASS="hot">S</SPAN>air 
+</OL></BODY>
+
+10.5 Atalhos e atributos de CSS 
+ 10.5.1 Atalhos de CSS 
+Alguns atributos de CSS lhe permitem fazer diversas configurações em uma 
+declaração. Por exemplo, suponha que você queira definir diversos 
+aspectos da fonte utilizada para tags H1, como segue:
+H1 { 
+font-style: italic; 
+font-weight: bold; 
+font-size: 18pt; 
+font-family: 'Times Roman'} 
+Como alternativa a especificar todas essas formatações de fonte 
+individualmente, você pode utilizar o atributo font: para defini-las todas de 
+uma só vez, assim: 
+H1 { 
+font: italic bold 18pt 'Times Roman'} 
+Note como diversos valores - itálico, negrito, 18pt e Times Roman - são 
+separados apenas por um espaço em branco. Essas regras abreviadas 
+certamente poupam espaço e tempo de digitação. 
+10.5.2 Atributos de CSS 
+Atributo de CSS O que ele formata
+background Cor de fundo, imagem, 
+transparência.
+background-attachment Rolagem do fundo / Marca 
+d'água.
+background-image Imagem de fundo.
+background-color Cor de fundo ou 
+transparência.
+background-position Posicionamento da 
+imagem de fundo.
+background-repeat Configuração lado-a-lado
+da imagem de fundo.
+border Largura, estilo e cor de 
+todas as 4 bordas.
+border-bottom Largura, estilo e cor da 
+borda inferior.
+border-bottom-color Cor da citada borda.
+border-bottom-style Estilo da citada borda.
+border-bottom-width Largura da citada borda.
+border-color Cor das 4 bordas.
+border-left Largura, estilo e cor da 
+borda esquerda.
+border-left-color Cor da borda citada.
+border-left-style Estilo da borda citada.
+border-left-width Largura da borda citada.
+border-right Largura, estilo e cor da 
+borda direita.
+border-right-color Cor da borda citada.
+border-right-style Estilo da borda citada.
+border-right-width Largura da borda citada.
+border-style Estilo de todas as 4 boras.
+border-top Largura, estilo e cor da 
+borda superior.
+border-top-color Cor da borda citada.
+border-top-style Estilo da borda citada.
+border-top-width Largura da borda citada.
+border-width Largura de todas as 4 
+bordas.
+clear
+Elementos flutuantes à 
+esquerda ou à direita de 
+um elemento.
+clip Parte visível de um 
+elemento.
+color Cor de primeiro plano.
+cursor Tipo de ponteiro do 
+mouse.
+display
+Se o elemento é exibido e 
+o espaço é reservado para 
+ele.
+filter Tipo de filtro aplicado ao 
+elemento.
+float Se o elemento flutua.
+
+font
+Estilo, variante, peso, 
+tamanho e altura da linha 
+do tipo de fonte.
+@font-face Incorporação da fonte ao 
+arquivo HTML.
+font-family Tipo de fonte.
+font-size Tamanho da fonte.
+font-style Fonte itálico.
+Fonte-variant Fonte bold.
+font-weight Peso da fonte de claro a 
+negrito.
+height Altura exibida ao 
+elemento.
+@import Folha de estilo a importar.
+left
+Posição do elemento em 
+relação a margem 
+esquerda da página.
+letter-spacing Distância entre as letras.
+line-height Distância entre linhas de 
+base.
+list-style
+Tipo, ima
+gem e posi
+ção do
+estilo da lista.
+list-style-image Marcador de item de lista.
+list-style-position Posição do marcador de 
+item da lista.
+list-style-type Marcador de item de lista 
+alternativo.
+margin Tamanho de todas as 4 
+margens.
+margin-left Tamanho da margem 
+esquerda.
+margin-right Tamanho da margem 
+direita.
+margin-bottom Tamanho da margem 
+inferior.
+margin-top Tamanho da margem 
+superior.
+overflow
+Exibição de imagens que 
+são maiores do que suas 
+molduras.
+padding
+Espaço em torno de um 
+elemento em todos os 
+lados.
+padding-bottom
+Espaço a partir da 
+margem inferior de um 
+elemento.
+padding-left Espaço à esquerda do 
+elemento.
+padding-right Espaço à direita do 
+elemento.
+padding-top
+Espaço a partir da 
+margem superior do 
+elemento.
+page-break-after Inserir quebra de página 
+depois de um elemento.
+page-break-before Inserir quebra de página 
+antes de um elemento.
+position Como o elemento é 
+posicionado na página.
+text-align Alinhamento do texto.
+text-decoration Sublinhado, sobrelinhado 
+ou riscado.
+text-indent Recuo da primeira linha do
+parágrafo.
+text-transform
+Transformação para todas 
+maiúsculas, minúsculas ou
+inicial maiúscula.
+top
+Posição do elemento em 
+relação a parte superior 
+da página.
+vertical-align Alinhamento vertical do 
+elemento.
+visibility Se elemento é visível ou 
+invisível.
+width Largura do elemento.
+z-index Posição do elemento na 
+pilha.
+</BR>
