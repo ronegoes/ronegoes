@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Affordable and professional web design">
+  <meta name="keywords" content="web design, affordable web design, professional web design">
+  <meta name="author" content="Brad Traversy">
+  <title>Cora | Demonagd - Escola & Sistemas de Informática S.A.</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="img/favicon.png">
+  <style>
+    body {
+      background-color: yellow;
+      font-family: Arial, sans-serif;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #0077cc;
+      color: white;
+    }
+    th, td {
+      padding: 8px;
+      border: 1px solid #fff;
+    }
+    form {
+      background: #f2f2f2;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1><span class="highlight">Cora</span> Demonagd</h1>
+      </div>
+      <nav>
+        <ul>
+          <li class="current"><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2>Cursos Disponíveis</h2>
+    <table>
+      <tr>
+        <th>Java</th>
+      </tr>
+    </table>
+
+    <form name="form_conselho" method="POST">
+      <h3>Dados do Programa</h3>
+      <table>
+        <tr>
+          <td>Dados</td>
+          <td><input type="text" name="codUnidade" size="5"></td>
+          <td><input type="text" name="unidade" size="80"></td>
+        </tr>
+        <tr>
+          <td>Endereço</td>
+          <td><input type="text" name="codPrograma" size="5"></td>
+          <td><input type="text" name="programa" size="80"></td>
+        </tr>
+      </table>
+
+      <h3>Curso: Java</h3>
+      <table>
+        <tr>
+          <td>Código</td>
+          <td><input type="text" name="codigo" size="5"></td>
+        </tr>
+        <tr>
+          <td>Nome</td>
+          <td><input type="text" name="nome" size="100"></td>
+        </tr>
+        <tr>
+          <td>Tipo</td>
+          <td>
+            <select name="tipo">
+              <option value="">Selecione</option>
+              <option value="1">Java</option>
+              <option value="2">Python</option>
+              <option value="3">Ruby</option>
+              <option value="4">C#</option>
+              <option value="5">Lógica</option>
+              <option value="6">Digitação</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Descrição</td>
+          <td><textarea name="fundamento" cols="50" rows="3"></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <input type="submit" value="Salvar">
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <center>
+      <h2>Bem-vindo(a)! Aluno: [nome]</h2>
+    </center>
+  </main>
+
+</body>
+</html>

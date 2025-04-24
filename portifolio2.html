@@ -103,6 +103,15 @@
     <div class="contato-item">
       <img src="img/whatsapp_733585.png" alt="WhatsApp">
       <span>(65) 98455-8815</span>
+	   <button type="submit">Enviar via WhatsApp</button>
+	   <script>
+	  // Substitua o número abaixo pelo seu número de WhatsApp com DDI e DDD, exemplo: 55 para Brasil, 65 para MT
+      const numero = '5565984558815'; // <- coloque seu número aqui
+
+      const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+      window.open(url, '_blank');
+	    }
+    </script>
     </div>
 
     <div class="contato-item">
