@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursos Online | Roneii Web Master</title>
+  <link rel="icon" href="planos-background-mobile.png">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/container.css">
+  <link rel="stylesheet" href="css/cabecalho.css">
+  <link rel="stylesheet" href="css/cursos.css">
+  <link rel="stylesheet" href="css/video.css">
+  <link rel="stylesheet" href="css/planos.css">
+  <link rel="stylesheet" href="css/beneficios.css">
+  <link rel="stylesheet" href="css/chamada-youtube.css">
+  <link rel="stylesheet" href="css/chamada-app.css">
+  <link rel="stylesheet" href="css/rodape.css">
+  <link rel="stylesheet" href="css/form-newsletter.css">
+  <style>
+    /* CSS adicional para flexbox e layout responsivo */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    header nav ul li {
+      margin-right: 20px;
+    }
+
+    header nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    header nav ul li.current a {
+      font-weight: bold;
+    }
+
+    main {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .planos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .planos__card {
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .planos__card:hover {
+      transform: scale(1.05);
+    }
+
+    .planos__titulo {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .valor--destaque {
+      font-size: 18px;
+      font-weight: bold;
+      color: #ff5733;
+    }
+
+    .cards__botao {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      display: inline-block;
+    }
+
+    .cards__botao:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .planos__card {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      header .container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      header h1 {
+        font-size: 20px;
+      }
+
+      header nav ul {
+        flex-direction: column;
+      }
+
+      header nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1><span class="highlight">Roneii</span> Web Master</h1>
+      </div>
+      <nav>
+        <ul>
+          <li class="current"><a href="index.html">HOME</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="planos">
+      <h2 class="planos__titulo">Acesso ilimitado a todos os cursos</h2>
+
+      <article class="planos__card card--anual">
+        <h3 class="plano__titulo">Plano Anual</h3>
+        <p><strong>Java + Python + PHP</strong></p>
+        <p>12x <span class="valor--destaque">R$150,00 mensais</span></p>
+        <p>Valor total de R$ 2.600,00</p>
+        <span>Acesso à plataforma Cora Demonagd</span><br>
+        <a href="cursos.html" class="cards__botao botao">Matricule-se</a>
+      </article>
+
+      <article class="planos__card card--semestral">
+        <h3 class="plano__titulo">Plano Semestral</h3>
+        <p>12x <span class="valor--destaque">R$60,00</span></p>
+        <p>Valor total de R$ 360,00</p>
+        <a href="cursos.html" class="cards__botao botao">Matricule-se</a>
+      </article>
+
+      <article class="planos__pagamentos">
+        <p>Pagamento seguro com PayPal</p>
+        <p>Oferecemos boleto à vista, <a href="#">entre em contato</a></p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <section class="rodape__secao rodape__secao--sobre">
+      <p class="rodape__infos-empresa">
+        Cora || Demonagd Escola & Sistemas de Informática S.A.<br>
+        CNPJ/CPF: 000.000.000/00<br>
+        Rua do Flamengo – Flamengo/MT<br>
+        Telefone: (65) 000-000
+      </p>
+    </section>
+  </footer>
+
+</body>
+</html>
