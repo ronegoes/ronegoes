@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "374828576331",
+    "project_id": "abiding-topic-328123",
+    "storage_bucket": "abiding-topic-328123.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:374828576331:android:1417d817d4c1524b7127ce",
+        "android_client_info": {
+          "package_name": "com.example.pagavel"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxdwYiBe0DIiOQARECgODyLjl69tAb9fI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
