@@ -5,13 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfólio - Roneii Gomes</title>
   <style>
-    /* Fundo magenta nas laterais */
     body {
-	  margin: 0;
-	  background: linear-gradient(to right, #ffe6ff, #e0f7ff);
-	  font-family: Arial, sans-serif;
-	}
-
+      margin: 0;
+      background: linear-gradient(to right, #ffe6ff, #e0f7ff);
+      font-family: Arial, sans-serif;
+    }
 
     header {
       text-align: center;
@@ -24,25 +22,31 @@
       justify-content: center;
       gap: 20px;
       margin-top: 10px;
+      flex-wrap: wrap;
     }
 
-    nav a {
-      text-decoration: none;
-      color: #000;
-      font-weight: bold;
+    nav a button {
+      padding: 10px 15px;
+      background-color: #0a9396;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
     }
 
-    /* Container azul-claro que envolve todo o conteúdo principal */
+    nav a button:hover {
+      background-color: #00777c;
+    }
+
     .main-content {
-      background-color: #e6f7ff; /* azul bem clarinho */
-      min-height: calc(100vh - 130px); /* ajustar altura para caber header+footer */
+      background-color: #e6f7ff;
+      min-height: calc(100vh - 130px);
       padding: 40px 0;
       display: flex;
       justify-content: center;
       align-items: flex-start;
     }
 
-    /* Card centralizado e destacado */
     .card {
       background-color: white;
       width: 90%;
@@ -51,69 +55,45 @@
       overflow: hidden;
       box-shadow: 0 0 15px rgba(0,0,0,0.2);
       text-align: center;
+      padding: 20px;
     }
 
-    /* Botão estilizado */
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      gap: 15px;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      padding: 10px;
+    }
+
+    .carousel img {
+      max-width: 90vw;
+      height: auto;
+      scroll-snap-align: center;
+      border-radius: 10px;
+      flex-shrink: 0;
+    }
+
     .btn {
       display: inline-block;
-      margin: 15px 0;
       padding: 10px 20px;
-      background-color: #333;
+      background-color: #0a9396;
       color: #fff;
       border-radius: 6px;
       text-decoration: none;
+      margin-top: 20px;
+    }
+
+    .btn:hover {
+      background-color: #00777c;
     }
 
     footer {
       text-align: center;
       background-color: #f0f0f0;
       padding: 15px;
-    }
-
-    /* Carrossel ping‑pong */
-    .carousel-container {
-      width: 100%;
-      height: 400px;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .carousel {
-	  display: flex;
-	}
-
-
-	@keyframes pingpong {
-	  0%   { transform: translateX(0); }
-	  100% { transform: translateX(-100%); } /* ou ajuste com base no número de imagens visíveis */
-	}
-
-
-    
-	.carousel img {
-	  width: auto;
-	  height: 500px; /* ajuste como quiser */
-	  margin-right: 10px;
-	  object-fit: cover;
-	}
-
-
-	.btn {
-	  display: inline-block;
-	  padding: 10px 20px;
-	  background-color: #0a9396;
-	  color: #fff;
-	  border-radius: 6px;
-	  text-decoration: none;
-	}
-	.btn:hover {
-	  background-color: #00777c;
-	}
-
-
-    @keyframes pingpong {
-      0%   { transform: translateX(0); }
-      100% { transform: translateX(-900%); }
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -122,38 +102,28 @@
   <header>
     <h1>Roneii Gomes da Silva</h1>
     <nav>
-	</a>
-	<a href="portifolio1.html">
-		<button type="button">Projetos</button>
-	<a href="portifolio2.html">
-		<button type="button">Contato</button>
-	</a> 
-	<a href="certificados.html"><button>Certificados</button></a>
-	<a href="fadback.html"><button>fadback</button></a>
+      <a href="index.html"><button>Início</button></a>
+      <a href="portifolio1.html"><button>Projetos</button></a>
+      <a href="portifolio2.html"><button>Contato</button></a>
+      <a href="certificados.html"><button>Certificados</button></a>
+      <a href="fadback.html"><button>Feedback</button></a>
     </nav>
   </header>
 
-  <!-- ÁREA PRINCIPAL EM AZUL-CLARO -->
   <div class="main-content">
-    <!-- Card centralizado -->
     <div class="card" id="projetos">
-      <div class="carousel-container">
-        <div class="carousel">
-		<!-- ... Minhas imagens... -->
-        
-       	<img src="img/eunapiscina21.jpeg" alt="Foto 1">
-		<img src="img/eunapiscina23.jpeg" alt="Foto 2">
-		
-		</div>
+      <div class="carousel">
+        <img src="img/eunapiscina21.jpeg" alt="Foto 1">
+        <img src="img/eunapiscina23.jpeg" alt="Foto 2">
       </div>
-	  <div>
-        <h2>Sobre mim</h2>
-		<a href="portifolio3.html" class="btn">Saiba mais</a>
+      <h2>Sobre mim</h2>
+      <a href="portifolio3.html" class="btn">Saiba mais</a>
+    </div>
+  </div>
 
-    <footer>
+  <footer>
     <p>&copy; 2025 Roneii Gomes da Silva</p>
   </footer>
-  </div>
-  </div>
+
 </body>
 </html>
