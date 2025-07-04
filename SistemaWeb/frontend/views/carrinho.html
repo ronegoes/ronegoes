@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Carrinho de Compras</h1>
+</header>
+
+<main>
+    <!-- Informações do Cliente -->
+    <section id="cliente-info">
+        <h2>Informações do Cliente</h2>
+        <p><strong>Nome:</strong> <span id="cliente-nome">João Silva</span></p>
+    </section>
+
+    <!-- Carrinho de Compras -->
+    <section id="carrinho">
+        <h2>Itens no Carrinho</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Preço</th>
+                    <th>Total</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="itens-carrinho">
+                <!-- Itens serão preenchidos via JavaScript -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Formulário para Adicionar Produto -->
+    <section id="adicionar-produto">
+        <h2>Adicionar Produto ao Carrinho</h2>
+        <form id="form-adicionar-produto">
+            <label for="nome">Nome do Produto:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="preco">Preço:</label>
+            <input type="number" id="preco" name="preco" step="0.01" required>
+
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" min="1" required>
+
+            <button type="submit">Adicionar ao Carrinho</button>
+        </form>
+    </section>
+
+    <!-- Resumo do Pedido -->
+    <section id="resumo">
+        <h2>Resumo do Pedido</h2>
+        <p><strong>Total:</strong> <span id="total">R$ 0,00</span></p>
+    </section>
+
+    <!-- Formas de Pagamento -->
+    <section id="pagamento">
+        <h2>Formas de Pagamento</h2>
+        <form id="form-pagamento">
+            <label>
+                <input type="radio" name="pagamento" value="cartao" required>
+                Cartão de Crédito
+            </label>
+            <label>
+                <input type="radio" name="pagamento" value="boleto">
+                Boleto Bancário
+            </label>
+            <label>
+                <input type="radio" name="pagamento" value="pix">
+                PIX
+            </label>
+            <button type="submit">Finalizar Compra</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Loja Virtual</p>
+</footer>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>

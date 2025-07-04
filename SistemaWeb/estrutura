@@ -1,0 +1,61 @@
+/SistemaWeb
+│
+├── /backend                  # Código do backend (Node.js, Express)
+│   ├── /controllers           # Funções que controlam a lógica de negócios (login, cadastro, vendas, etc.)
+│   │   ├── clienteController.js
+│   │   ├── produtoController.js
+│   │   ├── vendaController.js
+│   │   └── usuarioController.js
+│   │
+│   ├── /models                # Definições dos modelos de banco de dados
+│   │   ├── clienteModel.js
+│   │   ├── produtoModel.js
+│   │   ├── vendaModel.js
+│   │   └── usuarioModel.js
+│   │
+│   ├── /routes                # Definições das rotas da API
+│   │   ├── clienteRoutes.js
+│   │   ├── produtoRoutes.js
+│   │   ├── vendaRoutes.js
+│   │   └── usuarioRoutes.js
+│   │
+│   ├── /middlewares           # Middlewares (autenticação, validações, etc.)
+│   │   └── authMiddleware.js
+│   │
+│   ├── /config                # Configurações do banco de dados e servidor
+│   │   └── dbConfig.js
+│   │
+│   ├── /uploads               # Armazenamento de arquivos (imagens dos produtos)
+│   │   └── produto-imagens/   # Aqui as imagens dos produtos podem ser armazenadas
+│   │
+│   ├── /utils                 # Funções auxiliares (por exemplo, helpers, validadores)
+│   │   └── hashPassword.js    # Função para hash de senhas
+│   │
+│   ├── server.js              # Arquivo principal do servidor
+│   └── package.json           # Dependências do projeto Node.js
+│
+├── /frontend                 # Código do frontend (HTML, CSS, JavaScript)
+│   ├── /assets                # Arquivos estáticos (imagens, ícones, etc.)
+│   │   └── logo.png
+│   │
+│   ├── /css                   # Arquivos CSS
+│   │   └── style.css
+│   │
+│   ├── /js                    # Arquivos JavaScript
+│   │   ├── login.js
+│   │   ├── cadastroProduto.js
+│   │   ├── venda.js
+│   │   └── dashboard.js       # Lógica para o painel de controle
+│   │
+│   ├── /views                 # Arquivos HTML
+│   │   ├── login.html
+│   │   ├── cadastroProduto.html
+│   │   ├── vendas.html
+│   │   └── dashboard.html
+│   │
+│   └── index.html             # Página inicial (opcional, caso tenha uma landing page)
+│
+├── /docs                      # Documentação do projeto
+│   └── README.md              # Descrição geral do projeto
+│
+└── .gitignore                 # Arquivos a serem ignorados pelo Git

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sistema Web</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+  <body>
+    
+    <header>
+        <h1>Dashboard - Sistema Web</h1>
+        
+    </header>
+
+    <main>
+        <div class="button-container">
+            <a href="../index.html" class="button">Home</a>
+            <a href="venda.html" class="button">Vendas</a>
+            <a href="cadastroProduto.html" class="button">Cadastro de Produto</a>
+			<a href="../../../index.html" class="button">Voltar ao Portfólio</a>
+            <!-- Incluir o Chart.js a partir do CDN -->
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+        </div>
+        </main>
+
+        <section class="dashboard-overview">
+            <h2>Visão Geral</h2>
+            <div class="dashboard-cards">
+                <div class="card">
+                    <h3>Total de Vendas</h3>
+                    <p>R$ 500,00</p>
+                </div>
+                <div class="card">
+                    <h3>Total de Produtos</h3>
+                    <p>120</p>
+                </div>
+                <div class="card">
+                    <h3>Total de Clientes</h3>
+                    <p>80</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="sales-stats">
+            <h2>Estatísticas de Vendas</h2>
+            <!-- Aqui podem vir gráficos ou outras informações dinâmicas 
+            <p>Gráfico de vendas, dados detalhados, etc.</p>-->
+
+   
+        <header>
+            <h1>Dashboard - Sistema Web</h1>
+            <!-- Gráfico de Vendas -->
+            <div class="chart-container">
+                <canvas id="vendasChart"></canvas>
+            </div>
+        </header>
+
+    </main>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Loja Virtual- web designer: Roneii</p>
+    </footer>    
+    <script>
+        // Dados do gráfico (exemplo de vendas mensais)
+        var ctx = document.getElementById('vendasChart').getContext('2d');
+        var vendasChart = new Chart(ctx, {
+            type: 'bar',  // Tipo do gráfico (pode ser 'bar', 'line', 'pie', etc.)
+            data: {
+                labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio'],  // Rótulos dos meses
+                datasets: [{
+                    label: 'Vendas Mensais',
+                    data: [50, 70, 120, 90, 150],  // Dados das vendas
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',  // Cor de fundo das barras
+                    borderColor: 'rgba(75, 192, 192, 1)',  // Cor da borda das barras
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true  // Garante que o eixo Y comece do 0
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

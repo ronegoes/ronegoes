@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Loja Virtual</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Produtos Disponíveis</h1>
+        <button id="logoutButton">Sair</button>
+    </header>
+
+    <main id="productsContainer">
+        <!-- Produtos serão carregados aqui via JavaScript -->
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Loja Virtual</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        // Verifica se o usuário está autenticado (token)
+        const token = localStorage.getItem('token');
+        if (!token) {
+            window.location.href = 'login.html'; // Redireciona para a página de login se não estiver autenticado
+        }
+
+        // Carregar produtos da API
+        axios.get('/api/produtos', {
+            headers: {
+                Authorization: `Bearer ${token}` // Envia o token para o backend
+            }
+        })
+        .then(response => {
+            const products = response.data.produtos;
+            let productsHtml = '';
+
+            products.forEach(product => {
+                productsHtml += `
+                    <div class="product">
+                        <h3>${product.nome}</h3>
+                        <p>${product.descricao}</p>
+                        <p>Preço: R$ ${product.preco}</p>
+                        <button onclick="addToCart(${product.id})">Adicionar ao Carrinho</button>
+                    </div>
+                `;
+            });
+
+            document.getElementById('productsContainer').innerHTML = productsHtml;
+        })
+        .catch(error => {
+            console.error(error);
+            alert('Erro ao carregar produtos');
+        });
+
+        // Função para adicionar produto ao carrinho
+        function addToCart(productId) {
+            // Lógica para adicionar produto ao carrinho (localStorage ou sessão)
+            alert(`Produto ${productId} adicionado ao carrinho!`);
+        }
+
+        // Logout
+        document.getElementById('logoutButton').addEventListener('click', () => {
+            localStorage.removeItem('token');
+            window.location.href = 'login.html'; // Redireciona para a tela de login
+        });
+    </script>
+</body>
+</html>

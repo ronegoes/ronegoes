@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #005f73;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+/* Cor geral do texto dentro da div */
+#sobre-mim {
+  color: #333331;           /* cor padrão para parágrafos */
+}
+
+/* Cabeçalho */
+#sobre-mim h2 {
+  color: #e6eae1;           /* um verde-azulado suave */
+  margin-bottom: 20px;
+}
+
+/* Parágrafos */
+#sobre-mim p {
+  color: #e6eae1;           /* um cinza um pouco mais forte */
+  line-height: 1.7;
+}
+
+/* Destaques (<strong>) */
+#sobre-mim strong {
+  color: #F0000;           /* tom mais escuro do mesmo verde-azulado */
+}
+

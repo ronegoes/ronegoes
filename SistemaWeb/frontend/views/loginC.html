@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Loja Virtual</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à Loja Virtual</h1>
+    </header>
+
+    <main>
+        <h2>Faça seu login</h2>
+        <form id="loginForm">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+
+            <button type="submit">Entrar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Loja Virtual</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const usuario = {
+                email: document.getElementById('email').value,
+                senha: document.getElementById('senha').value
+            };
+
+            axios.post('/api/login', usuario) // Enviar para o backend
+                .then(response => {
+                    // Se login for bem-sucedido, redireciona para a tela de produtos
+                    localStorage.setItem('token', response.data.token);
+                    window.location.href = 'produtos.html'; // Redireciona para a tela de produtos
+                })
+                .catch(error => {
+                    console.error(error);
+                    alert('Erro ao fazer login!');
+                });
+        });
+    </script>
+</body>
+</html>

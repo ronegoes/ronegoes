@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sistema Web</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+  <main>
+    <!-- Seção com os botões para navegar para outras páginas -->
+    <div class="button-container">
+        <!-- Caminhos para os arquivos dentro de backend/views/ -->
+        <a href="../index.html" class="button">Home</a>
+		<a href="../../../index.html" class="button">Voltar ao Portfólio</a>
+    </div>
+</main>
+<body>
+    
+    <form id="produtoForm">
+        <input type="text" id="nome" placeholder="Nome do produto" required><br>
+        <textarea id="descricao" placeholder="Descrição" required></textarea><br>
+        <input type="number" id="preco" placeholder="Preço" required><br>
+        <input type="file" id="imagem" required><br>
+        <input type="number" id="estoque" placeholder="Estoque" required><br>
+        <button type="submit">Cadastrar Produto</button>
+		
+    </form>
+
+    <script>
+        document.getElementById('produtoForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            const nome = document.getElementById('nome').value;
+            const descricao = document.getElementById('descricao').value;
+            const preco = parseFloat(document.getElementById('preco').value);
+            const imagem = document.getElementById('imagem').files[0];
+            const estoque = parseInt(document.getElementById('estoque').value);
+
+            const formData = new FormData();
+            formData.append('nome', nome);
+            formData.append('descricao', descricao);
+            formData.append('preco', preco);
+            formData.append('imagem', imagem);
+            formData.append('estoque', estoque);
+
+            const response = await fetch('http://localhost:3000/produtos', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (response.ok) {
+                alert('Produto cadastrado!');
+            } else {
+                alert('Erro ao cadastrar produto');
+            }
+        });
+    </script>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer>
+        <p>&copy; 2025 Loja Virtual- web designer: Roneii</p>
+    </footer>   
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        // Captura o envio do formulário
+        document.getElementById('formCadastroProduto').addEventListener('submit', function(event) {
+            event.preventDefault(); // Previne o envio padrão do formulário
+
+            // Coleta os dados dos campos
+            const produto = {
+                nome: document.getElementById('nomeProduto').value,
+                descricao: document.getElementById('descricaoProduto').value,
+                preco: document.getElementById('precoProduto').value,
+                imagem: document.getElementById('imagemProduto').value
+            };
+
+            // Envia os dados para o backend utilizando Axios (AJAX)
+            axios.post('/api/produtos', produto)
+                .then(response => {
+                    alert('Produto cadastrado com sucesso!');
+                    // Limpar os campos após o envio (opcional)
+                    document.getElementById('formCadastroProduto').reset();
+                })
+                .catch(error => {
+                    console.error(error);
+                    alert('Erro ao cadastrar o produto.');
+                });
+        });
+    </script>
+</body>
+</html>
